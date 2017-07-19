@@ -1,11 +1,13 @@
 node('master') {
 
    stage 'Git Checkout'
-   		echo 'Hello World 1'
-
+   		git 'https://github.com/executeautomation/cucumberbasic.git'
+         echo 'checkout done'
+   
    stage 'Maven Validate'
-   		echo 'Maven Project Validate'
-
+   		sh 'mvn validate'
+         echo 'maven validate'
+   
    stage 'Maven Compile'
    		echo 'Maven Project Compile'
 
@@ -16,5 +18,6 @@ node('master') {
     	echo 'Reporting Getting Creating'
 
    stage 'Email Status'
+      step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'alert@harish.com', sendToIndividuals: false])
     	echo 'Notification Sending'            
 }
