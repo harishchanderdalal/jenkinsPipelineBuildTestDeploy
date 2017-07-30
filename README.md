@@ -1,4 +1,4 @@
 # jenkinsPipelineBuildTestDeploy
 maven project build test deploy report mail
 
-Complete Pipeline of
+Complete Pipeline of Jenkin
