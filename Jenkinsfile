@@ -17,5 +17,4 @@ node('master') {
 
    stage 'Job Status Status'
         echo 'Notification Sending'
-
 }
