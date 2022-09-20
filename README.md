@@ -1,5 +1,5 @@
 # jenkinsPipelineBuildTestDeploy
-Jenkins Pipe Line
+Jenkins PipeLine
 - Git Url :-
 ```
 https://github.com/harishchanderdalal/jenkinsPipelineBuildTestDeploy.git
